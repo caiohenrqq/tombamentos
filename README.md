@@ -10,6 +10,9 @@ Este é um programa simples em C que permite gerenciar um registro de tombamento
 
 2. **Ler Tombamentos**:
    - Lê os tombamentos registrados no arquivo de texto e exibe-os no console.
+  
+3. **Data e Hora da Inserção**
+   - Automaticamente insere a data e hora após o inserimento do tombamento.
 
 ### Como Funciona
 
