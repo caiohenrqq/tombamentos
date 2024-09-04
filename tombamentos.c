@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+<<<<<<< HEAD
 #include <string.h>
 #include <time.h>
 
@@ -22,14 +23,29 @@ char* obterHora()
     snprintf(hora, sizeof(hora), "%d:%d:%d", tm.tm_hour, tm.tm_min, tm.tm_sec);
     return hora;
 }
+=======
+>>>>>>> b1d941e11cbb8c08da9a96f50dddf9ba97543f49
 
 int main()
 {
     int *tombamentos, i = 0, tamanho, rTombamentosMenu, rTombamentos, fim = 0;
 
     do {
+<<<<<<< HEAD
         printf("| (1) - ADICIONAR TOMBAMENTOS | (2) - LER TOMBAMENTOS |\n");
         scanf("%d", &rTombamentos);
+=======
+        system("cls");
+        printf("| === | GERENCIA DE INFORMATICA | === |\n");
+        printf("| (1) - TOMBAMENTOS |\n");
+        scanf("%d", &rTombamentosMenu);
+
+        if (rTombamentosMenu == 1)
+        {
+            printf("| (1) - ADICIONAR TOMBAMENTOS | (2) - LER TOMBAMENTOS |\n");
+            scanf("%d", &rTombamentos);
+        }
+>>>>>>> b1d941e11cbb8c08da9a96f50dddf9ba97543f49
 
         if (rTombamentos == 1)
         {
@@ -40,7 +56,11 @@ int main()
 
             if (arquivo == NULL)
             {
+<<<<<<< HEAD
                 printf("Erro: não foi possivel abrir o arquivo %s", arquivo);
+=======
+                printf("Erro: nÃ£o foi possivel abrir o arquivo %s", arquivo);
+>>>>>>> b1d941e11cbb8c08da9a96f50dddf9ba97543f49
                 return 1;
             }
 
@@ -48,7 +68,11 @@ int main()
             {
                 printf("Entre com o tombamento %d: ", i+1);
                 scanf("%d", &tombamentos[i]);
+<<<<<<< HEAD
                 fprintf(arquivo, "%d - %s - %s\n", tombamentos[i], obterData(), obterHora());
+=======
+                fprintf(arquivo, "%d\n", tombamentos[i]);
+>>>>>>> b1d941e11cbb8c08da9a96f50dddf9ba97543f49
             }
 
             fclose(arquivo);
@@ -59,19 +83,30 @@ int main()
                 int j;
                 for (j = 0; j < tamanho; j++)
                 {
+<<<<<<< HEAD
                     printf("Tombamento %d: %d\n", j+1, tombamentos[j]);
+=======
+                    printf("Tombamento %d: %d. \n", j+1, tombamentos[j]);
+>>>>>>> b1d941e11cbb8c08da9a96f50dddf9ba97543f49
                 }
             }
             free(tombamentos);
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b1d941e11cbb8c08da9a96f50dddf9ba97543f49
         if (rTombamentos == 2)
         {
             FILE *arquivo = fopen("tombamentos.txt", "r");
 
             if (arquivo == NULL)
             {
+<<<<<<< HEAD
                 printf("Erro: não foi possivel abrir o arquivo %s", arquivo);
+=======
+                printf("Erro: nÃ£o foi possivel abrir o arquivo %s", arquivo);
+>>>>>>> b1d941e11cbb8c08da9a96f50dddf9ba97543f49
                 return 1;
             }
 
